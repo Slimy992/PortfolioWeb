@@ -112,16 +112,17 @@ ul{
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  margin-right: 20px;
 }
 
 .header{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: $DarkGray;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: $DarkGray;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .header h1{
@@ -129,15 +130,16 @@ ul{
 }
 
 .img-moi{
-    display: inline-block;
-    width: 128px;
-    height: 128px;;
-    margin: 10px;
+  display: inline-block;
+  width: 64px;
+  height: 64px;;
+  margin: 10px;
 }
 
 /* Nav menu */
 
 .nav{
+    vertical-align: center;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -155,11 +157,11 @@ ul{
     display: block;
     padding: 20px;
     margin-left: 10px;
+    margin-right: 10px;
     transition: background-color 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s;
     color: whitesmoke;
     border: 2px outset whitesmoke;
     border-radius: 10px;
-
 }
 
 .menu a:hover{
@@ -244,7 +246,7 @@ ul{
 
 /* Fullscreen Header*/
 
-@media (min-width: 970px) {
+@media (min-width: 1072px) {
     .nav{
         max-height: none;
         top: 0;
@@ -253,10 +255,18 @@ ul{
         width: fit-content;
         background-color: transparent;
     }
+    .img-moi{
+      width: 128px;
+      height: 128px;
+    }
+
+    .menu{
+      margin-top: 0px;
+    }
 
     .header h1{
-      font-size: 2.2vw;
-  }
+      font-size: 2vw;
+    }
 
     .menu li{
         float: left;
@@ -370,7 +380,7 @@ ul{
   }
 }
 
-.container-cv{
+.main-container{
   justify-content: center;
   display: block;
   margin: 0 auto;
@@ -386,6 +396,7 @@ ul{
   -webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow: 5px 5px 15px 5px #000000;
 }
+
 
 .container-cv h1{
     padding-top: 5vh;
