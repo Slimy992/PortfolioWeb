@@ -13,6 +13,7 @@ body {
 }
 
 // Classe de container
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -51,7 +52,7 @@ body {
 
 nav {
   background: $DarkGray;
-  padding: 2rem;
+  padding: 3rem;
 }
 a {
   display: block;
@@ -62,8 +63,7 @@ a {
   list-style-type: none;
 }
 .titre {
-  padding: 10px;
-  font-size: 20px;
+  font-weight: bold;
   margin-right: 128px auto;
   cursor: progress;
 } 
@@ -89,17 +89,25 @@ a {
 }
 
 .item:not(.button) a,.item a::after {
-  width: max-content;
+  width: 400px;
   border: 2px outset rgba(255,255,255,1);
+  border-radius: 50px 50px 50px 50px;
+  -moz-border-radius: 50px 50px 50px 50px;
+  -webkit-border-radius: 50px 50px 50px 50px;
 }
 
-/* Mobile menu */
+/* Menu Petit Écran */
 .menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu .li{
+  width: 30rem;
+
 }
 .menu li a {
   display: block;
@@ -114,20 +122,22 @@ a {
   order: 1;
   font-size: 20px;
 }
+
 .item.button {
   order: 2;
 }
+
 .item {
   order: 3;
-  width: auto;
   text-align: center;
   display: none;
 }
+
 .active .item {
   display: block;
 }
 
-/* Desktop menu */
+/* Menu Écran Standard */
 @media all and (min-width: 1160px) {
   .menu {
     align-items: flex-start;
@@ -135,6 +145,11 @@ a {
     background: none;
     flex-direction: row;
   }
+  .item:not(.button) a,.item a::after {
+    font-size: 1.2vw;
+    width: 17vw;
+  }
+
   .logo {
     order: 0;
   }
@@ -150,6 +165,9 @@ a {
 
   .toggle {
     display: none;
+  }
+  .titre{
+    font-size: 1.5vw;
   }
 }
 
@@ -232,7 +250,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1160px) {
   .waves {
     height: 40px;
     min-height: 40px;
@@ -244,11 +262,13 @@ a {
 }
 
 .container-cv{
+  justify-content: center;
   display: block;
-  margin: auto;
-  margin-top: 10rem;
+  margin: 0 auto;
+  margin-top: 5rem;
   width: 65%;
   height: 100rem;
+  color: $DarkGray;
   background-color: white;
   border: 5px outset #FFFFFF;
   border-radius: 10px;
@@ -258,10 +278,15 @@ a {
   box-shadow: 5px 5px 15px 5px #000000;
 }
 
-.cv-titre{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.container-cv h1{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 2vw;
     text-align: center;
+}
+
+.container-cv h2{
+  font-size: 1.5vw;
 }
 
 .container-cv .grid-2x1{
@@ -269,13 +294,43 @@ a {
   align-items: center;
 }
 
-.container-cv .grid-2x1 .flex-row{
-  width: 256px;
-  flex-wrap: wrap;
+.container-cv .splitter{
+    width: 90%;
+    background-color: $Red;
+    border: 0.5px solid $Red;   	
+    border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
 }
 
-.container-cv span{
-  font-size: 24px;
+.splitTitre{
+  margin-bottom: 1rem;
+}
+
+.splitSousTitre {
+  margin-bottom: 2rem;
+}
+
+
+.container-cv .droite span{
+  text-align: right;
+  width: 14vw;
+  font-size: 1.5vw;
+}
+
+.container-cv .gauche{
+  margin-left: -20px;
+  align-content: start;
+}
+
+.container-cv .gauche div{
+  text-align: left;
+  font-size: 1.35vw;
+}
+
+.container-cv span img{
+  width: 64px;
+  height: 64px;
 }
 
 .container-cv .etoile-full{
