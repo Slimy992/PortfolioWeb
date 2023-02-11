@@ -1,48 +1,71 @@
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
-const items = document.querySelectorAll(".item");
-
-/* Toggle mobile menu */
-function toggleMenu() {
-  if (menu.classList.contains("active")) {
-    menu.classList.remove("active");
-    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
-  } else {
-    menu.classList.add("active");
-    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
-  }
-}
-
-/* Activate Submenu */
-function toggleItem() {
-  if (this.classList.contains("submenu-active")) {
-    this.classList.remove("submenu-active");
-  } else if (menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    this.classList.add("submenu-active");
-  } else {
-    this.classList.add("submenu-active");
-  }
-}
-
-/* Close Submenu From Anywhere */
-function closeSubmenu(e) {
-  if (menu.querySelector(".submenu-active")) {
-    let isClickInside = menu
-      .querySelector(".submenu-active")
-      .contains(e.target);
-
-    if (!isClickInside && menu.querySelector(".submenu-active")) {
-      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
     }
-  }
-}
-/* Event Listeners */
-toggle.addEventListener("click", toggleMenu, false);
-for (let item of items) {
-  if (item.querySelector(".submenu")) {
-    item.addEventListener("click", toggleItem, false);
-  }
-  item.addEventListener("keypress", toggleItem, false);
-}
-document.addEventListener("click", closeSubmenu, false);
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+const observerFast = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showFast');
+    } else {
+      entry.target.classList.remove('showFast');
+    }
+  });
+});
+
+const hiddenFastElements = document.querySelectorAll('.hiddenFast');
+hiddenFastElements.forEach((elF) => observerFast.observe(elF));
+
+const observerSlow = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showSlow');
+    } else {
+      entry.target.classList.remove('showSlow');
+    }
+  });
+});
+
+const hiddenSlowElements = document.querySelectorAll('.hiddenSlow');
+hiddenSlowElements.forEach((elS) => observerSlow.observe(elS));
+
+
+const observerEtoile = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showEtoile');
+    } else {
+      entry.target.classList.remove('showEtoile');
+    }
+  });
+});
+
+const hiddenEtoileElements = document.querySelectorAll('.hiddenEtoile');
+hiddenEtoileElements.forEach((elE) => observerEtoile.observe(elE));
+
+
+const observerDrop = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showDrop');
+    } else {
+      entry.target.classList.remove('showDrop');
+    }
+  });
+});
+
+const hiddenDropElements = document.querySelectorAll('.hiddenDrop');
+hiddenDropElements.forEach((elD) => observerDrop.observe(elD));

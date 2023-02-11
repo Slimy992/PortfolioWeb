@@ -1,0 +1,60 @@
+/* JS Styles */
+.hiddenSlow {
+  opacity: 0;
+  filter: blur(3px);
+  transition: opacity 2.5s;
+  transition-delay: 50ms;
+}
+
+.showSlow {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hiddenFast {
+  opacity: 0;
+  filter: blur(3px);
+  transition: opacity 0.8s;
+  transition-delay: 50ms;
+}
+
+.showFast {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transition: opacity 1.5s;
+  transition-delay: 50ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hiddenEtoile {
+  transition: all 2s;
+  filter: blur(3px);
+  transform: translateX(-100%);
+}
+
+.showEtoile {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hiddenDrop {
+  transition: all 2s;
+  filter: blur(3px);
+  transform: translateY(-90%);
+}
+
+.showDrop {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}/*# sourceMappingURL=jsstyles.css.map */
