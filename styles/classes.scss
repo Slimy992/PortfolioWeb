@@ -7,57 +7,58 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-  }
-  
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-  }
-  
-  .grid-2x1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-content:  center;
-  }
-  
-   .grid-2x2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-content:  center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.grid-2x1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content:  center;
+}
+
+  .grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content:  center;
+}
+
+.grid-1x3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 1.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   }
 
-  .grid-1x3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1.5fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-  
-  .grid-item-center{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-  
-  .grid-item-right{
-      display: flex;
-      align-items: center;
-      justify-content: right;
-  }
-  
-  .grid-item-left{
-      display: flex;
-      align-items: center;
-      justify-content: left;
-  }
+.grid-item-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.grid-item-left{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+

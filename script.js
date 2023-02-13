@@ -41,19 +41,33 @@ const hiddenSlowElements = document.querySelectorAll('.hiddenSlow');
 hiddenSlowElements.forEach((elS) => observerSlow.observe(elS));
 
 
-const observerEtoile = new IntersectionObserver((entries) => {
+const observerLeft = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
     if (entry.isIntersecting) {
-      entry.target.classList.add('showEtoile');
+      entry.target.classList.add('showLeft');
     } else {
-      entry.target.classList.remove('showEtoile');
+      entry.target.classList.remove('showLeft');
     }
   });
 });
 
-const hiddenEtoileElements = document.querySelectorAll('.hiddenEtoile');
-hiddenEtoileElements.forEach((elE) => observerEtoile.observe(elE));
+const hiddenLeftElements = document.querySelectorAll('.hiddenLeft');
+hiddenLeftElements.forEach((elL) => observerLeft.observe(elL));
+
+const observerRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showRight');
+    } else {
+      entry.target.classList.remove('showRight');
+    }
+  });
+});
+
+const hiddenRightElements = document.querySelectorAll('.hiddenRight');
+hiddenRightElements.forEach((elR) => observerRight.observe(elR));
 
 
 const observerDrop = new IntersectionObserver((entries) => {

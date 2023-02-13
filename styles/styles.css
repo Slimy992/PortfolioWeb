@@ -230,9 +230,29 @@ main .splitter {
   padding-bottom: 1.5vh;
 }
 
+.container-info p {
+  display: inline;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
 .container-info .grid-2x1 {
   padding-top: 0.7vh;
   font-size: 1.35vw;
+}
+
+.container-etude {
+  padding-top: 6rem;
+}
+
+.container-etude .flex-row {
+  width: 75%;
+  justify-content: space-between;
+}
+
+.container-exp {
+  padding-top: 6rem;
 }
 
 .container-cv {

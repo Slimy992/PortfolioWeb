@@ -35,13 +35,27 @@
   filter: blur(0);
 }
 
-.hiddenEtoile {
+.hiddenLeft {
   transition: all 2s;
   filter: blur(3px);
   transform: translateX(-100%);
+  transition-delay: 50ms;
 }
 
-.showEtoile {
+.showLeft {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hiddenRight {
+  transition: all 2s;
+  filter: blur(3px);
+  transform: translateX(100%);
+  transition-delay: 50ms;
+}
+
+.showRight {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
