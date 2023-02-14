@@ -20,6 +20,14 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 2vw;
+}
+
+h2 {
+  font-size: 1.8vw;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -98,13 +106,13 @@ header h1 {
 
 header a {
   color: white;
+  font-size: 18px;
 }
 
 .img-moi {
   display: inline-block;
   width: 72px;
   height: 72px;
-  margin: 10px;
   animation: rotate 0.5s infinite linear;
   -webkit-animation: rotate 60s infinite linear;
   -moz-animation: rotate 60s infinite linear;
@@ -119,6 +127,7 @@ header a {
   }
 }
 .splitter {
+  display: block;
   background-color: RGB(40, 40, 40);
 }
 
@@ -193,7 +202,7 @@ main {
   margin-top: 6rem;
   margin-bottom: 6rem;
   width: 85%;
-  height: 100rem;
+  height: 103rem;
   color: RGB(40, 40, 40);
   background-color: white;
   border: 5px outset #FFFFFF;
@@ -219,14 +228,12 @@ main .splitter {
 }
 
 .container-info h1 {
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-  font-size: 2vw;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
 .container-info h2 {
-  font-size: 1.8vw;
   padding-bottom: 1.5vh;
 }
 
@@ -242,32 +249,48 @@ main .splitter {
   font-size: 1.35vw;
 }
 
-.container-etude {
-  padding-top: 6rem;
-}
-
-.container-etude .flex-row {
+.container-experience .flex-row {
   width: 75%;
   justify-content: space-between;
 }
 
-.container-exp {
-  padding-top: 6rem;
+.container-experience .titre {
+  text-align: center;
+  width: 50%;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.container-cv {
-  margin-bottom: 8vh;
+.container-experience {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container-experience p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.container-experience .titre span {
+  width: 100%;
+}
+
+.container-experience .flex-row {
+  width: 80%;
+}
+
+.container-experience p {
+  width: 70%;
 }
 
 .container-cv h1 {
   padding-top: 2vh;
   padding-bottom: 2vh;
-  font-size: 2vw;
   text-align: center;
 }
 
 .container-cv h2 {
-  font-size: 1.8vw;
   padding-bottom: 1.2vh;
 }
 
@@ -297,7 +320,7 @@ footer {
   color: whitesmoke;
   display: block;
   margin: auto;
-  width: 50%;
+  width: 75%;
   padding-top: 6rem;
   padding-bottom: 4rem;
 }
