@@ -37,8 +37,8 @@
       flex-direction: column;
     }
 
-    .container-info span{
-      font-size: 7px;
+    .container-info span, .container-info p{
+      font-size: 12px;
     }
 
     .container-experience p{
@@ -49,7 +49,11 @@
       font-size: 12px;
     }
     .container-cv .grid-2x1{
-      font-size: 7px;
+      font-size: 9px;
+    }
+
+    footer{
+      font-size: 9px;
     }
 
 }

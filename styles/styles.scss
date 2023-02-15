@@ -1,4 +1,5 @@
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
   scroll-behavior: smooth;
@@ -7,7 +8,7 @@
   margin: 0;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Lato' , sans-serif;
   font-size: 16px;
   background-color: $DarkGray;
   height: auto;
@@ -340,14 +341,19 @@ main .splitter{
 
 .container-cv .grid-2x1{
   padding-top: 5px;
-  font-size: 1.3vw;
-  grid-column-gap: 10px;
+  font-size: 1.2vw;
+  grid-column-gap: 15px;
+}
+
+.container-cv .grid-2x2{
+  grid-column-gap: 30px;
 }
 
 .container-cv .grid-2x1 .flex-col .grid-2x1 .grid-item-left span{
   margin-right: 0.5vw;
   margin-bottom: 0.3vw;
 }
+
 
 .etoile-full{
   color : $Gold;
