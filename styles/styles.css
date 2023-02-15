@@ -9,7 +9,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   background-color: RGB(40, 40, 40);
-  height: 100rem;
+  height: auto;
 }
 
 a {
@@ -21,11 +21,11 @@ ul {
 }
 
 h1 {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 h2 {
-  font-size: 1.8vw;
+  font-size: 1.3vw;
 }
 
 /* Scrollbar */
@@ -202,7 +202,7 @@ main {
   margin-top: 6rem;
   margin-bottom: 6rem;
   width: 85%;
-  height: 103rem;
+  height: auto;
   color: RGB(40, 40, 40);
   background-color: white;
   border: 5px outset #FFFFFF;
@@ -249,6 +249,11 @@ main .splitter {
   font-size: 1.35vw;
 }
 
+.container-experience .exp-informatique {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 .container-experience .flex-row {
   width: 75%;
   justify-content: space-between;
@@ -262,14 +267,19 @@ main .splitter {
   padding-bottom: 3rem;
 }
 
+.container-experience .titre h1 {
+  padding-bottom: 15px;
+}
+
 .container-experience {
-  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .container-experience p {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 60%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
 }
 
 .container-experience .titre span {
@@ -284,9 +294,13 @@ main .splitter {
   width: 70%;
 }
 
+.container-cv {
+  padding-bottom: 1rem;
+}
+
 .container-cv h1 {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
   text-align: center;
 }
 
@@ -300,8 +314,8 @@ main .splitter {
 }
 
 .container-cv .grid-2x1 {
-  padding-top: 0.7vh;
-  font-size: 1.35vw;
+  padding-top: 5px;
+  font-size: 1.3vw;
   grid-column-gap: 10px;
 }
 

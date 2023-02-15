@@ -36,14 +36,6 @@
   justify-content:  center;
 }
 
-.grid-1x3 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 1.5fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
-
 .grid-item-center{
     display: flex;
     align-items: center;

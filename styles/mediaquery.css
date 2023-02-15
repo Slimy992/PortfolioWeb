@@ -1,8 +1,5 @@
 /*Small Screen */
 @media (max-width: 760px) {
-  * {
-    font-size: 14px;
-  }
   h1 {
     font-size: 20px;
   }
@@ -31,8 +28,17 @@
   .container-experience .flex-row {
     flex-direction: column;
   }
+  .container-info span {
+    font-size: 7px;
+  }
+  .container-experience p {
+    font-size: 14px;
+  }
   .container-cv .grid-2x2 h2 {
-    font-size: 1.2rem;
+    font-size: 12px;
+  }
+  .container-cv .grid-2x1 {
+    font-size: 7px;
   }
 }
 /* 1920x1080+ screen */
